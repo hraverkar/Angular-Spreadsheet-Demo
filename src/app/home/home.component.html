@@ -1,0 +1,12 @@
+<input type="file" (change)="onFileChange($event)">
+
+<div class="form-group">
+  <label for="file">Choose File</label>
+  <input type="file"
+         id="file"
+         multiple="multiple"
+         (change)="handleFileInput($event)">
+</div>
+
+
+<div [innerHTML]="htmlRender"></div>
